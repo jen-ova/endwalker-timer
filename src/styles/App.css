@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Noto Serif', serif;
+  background-color: black;
 }
 
 .container {
@@ -18,14 +19,6 @@ body {
   color: white;
 }
 
-.app-bgimage {
-  background-color: black;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 img {
   width: 80%;
 }
@@ -40,4 +33,10 @@ footer a {
   color: rgba(204,122,42,255);
   font-weight: bold;
   text-decoration: none;
+}
+
+@media only screen and (max-device-width: 750px) {
+  .title {
+      font-size: 1rem;
+  }
 }
