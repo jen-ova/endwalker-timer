@@ -1,38 +1,43 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+body {
+  font-family: 'Noto Serif', serif;
+}
+
+.container {
   text-align: center;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.content {
+  margin-top: 10%;
+  position: relative;
+  padding: 1rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-bgimage {
+  background-color: black;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  width: 80%;
+}
+
+.title {
+  color: white;
+  font-size: 2rem;;
+  text-shadow: 1px 1px 10px rgba(204,122,42,255), 1px 1px 10px rgba(204,122,42,255);
+}
+
+footer a {
+  color: rgba(204,122,42,255);
+  font-weight: bold;
+  text-decoration: none;
 }

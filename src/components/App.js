@@ -1,54 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import Timer from "./Timer";
+import logo from "../ew.png";
 import "../styles/App.css";
 
 function App() {
-  const calculateTimeLeft = () => {
-    let year = new Date().getFullYear();
-    let difference =
-      +new Date(`November 19, ${year} 09:00:00 GMT+00:00`) - +new Date();
-    let timeLeft = {};
-
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
-    }
-
-    return timeLeft;
-  };
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
-  const [year] = useState(new Date().getFullYear());
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-    return () => clearTimeout(timer);
-  });
-
-  const timerComponents = [];
-
-  Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
-      return;
-    }
-
-    timerComponents.push(
-      <span>
-        {timeLeft[interval]} {interval}{" "}
-      </span>
-    );
-  });
-
   return (
-    <div>
-      <h1>FFXIV Endwalker {year} Countdown</h1>
-      {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+    <div className="app-bgimage">
+      <div className="container">
+        <div className="content">
+          <img src={logo} alt="endwalker" />
+          <p className="title">Early Access 19th November 9am GMT</p>
+          <Timer />
+          <footer>
+            Created by <a href="http://www.github.com/jen-ova">Jen Ova</a>
+          </footer>
+        </div>
+      </div>
     </div>
   );
 }

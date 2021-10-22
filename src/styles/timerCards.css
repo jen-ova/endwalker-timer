@@ -1,0 +1,30 @@
+.timer-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin: 2rem; */
+    position: relative;
+}
+
+.card {
+    margin: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.dhms {
+    font-size: 5rem;
+    border-radius: 1rem;
+    background: linear-gradient(rgba(61,78,153,0.5), rgba(56,137,179,0.5), rgba(204,122,42,0.5));
+}
+
+p {
+    text-transform: uppercase;    
+    padding: 1rem;
+}
+
+@media only screen and (max-device-width: 750px) {
+    .dhms {
+        font-size: 2rem;
+    }
+  }
