@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/timerCard.css'
 
-function TimerCards({ time, unit }) {
+function TimerCard({ time, unit }) {
   return (
     <div className="card">
       <p className="dhms">{time}</p>
@@ -10,4 +10,4 @@ function TimerCards({ time, unit }) {
   )
 }
 
-export default TimerCards
+export default TimerCard
