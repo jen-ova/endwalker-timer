@@ -1,0 +1,22 @@
+.card {
+  margin: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.dhms {
+  font-size: 5rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+    rgba(61, 78, 153, 0.5),
+    rgba(56, 137, 179, 0.5),
+    rgba(204, 122, 42, 0.5)
+  );
+  margin: 0 auto;
+  max-width: 9rem;
+}
+
+p {
+  text-transform: uppercase;
+  padding: 1rem;
+}

@@ -7,36 +7,32 @@ body {
 
 .container {
   text-align: center;
-  margin: auto;
-  width: 60%;
-  padding: 10px;
-}
-
-.content {
-  margin-top: 10%;
   position: relative;
-  padding: 1rem;
+  padding: 4rem 1rem 1rem;
   color: white;
+  margin: 0 auto;
+  max-width: 55rem;
 }
 
 img {
-  width: 80%;
+  width: 100%;
 }
 
 .title {
   color: white;
-  font-size: 2rem;;
-  text-shadow: 1px 1px 10px rgba(204,122,42,255), 1px 1px 10px rgba(204,122,42,255);
+  font-size: 2rem;
+  text-shadow: 1px 1px 10px rgba(204, 122, 42, 255),
+    1px 1px 10px rgba(204, 122, 42, 255);
 }
 
 footer a {
-  color: rgba(204,122,42,255);
+  color: rgba(204, 122, 42, 255);
   font-weight: bold;
   text-decoration: none;
 }
 
 @media only screen and (max-device-width: 750px) {
   .title {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }

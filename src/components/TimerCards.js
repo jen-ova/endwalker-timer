@@ -1,27 +1,17 @@
-import React from "react";
-import "../styles/timerCards.css";
+import React from 'react'
+import TimerCard from './TimerCard'
+import '../styles/timerCards.css'
 
 function TimerCards({ timeLeft }) {
+  const timeArray = Object.entries(timeLeft)
+
   return (
     <div className="timer-cards">
-      <div className="card">
-        <p className="dhms">{timeLeft.days}</p>
-        <p>days</p>
-      </div>
-      <div className="card">
-        <p className="dhms">{timeLeft.hours}</p>
-        <p>hours</p>
-      </div>
-      <div className="card">
-        <p className="dhms">{timeLeft.minutes}</p>
-        <p>minutes</p>
-      </div>
-      <div className="card">
-        <p className="dhms">{timeLeft.seconds}</p>
-        <p>seconds</p>
-      </div>
+      {timeArray.map((time, index) => (
+        <TimerCard time={time[1]} unit={time[0]} key={`timer-card-${index}`} />
+      ))}
     </div>
-  );
+  )
 }
 
-export default TimerCards;
+export default TimerCards
