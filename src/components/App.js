@@ -1,17 +1,25 @@
 import React from "react";
 import Timer from "./Timer";
 import logo from "../ew.png";
+import liveletter from "../liveletter.png";
 import "../styles/App.css";
 
 function App() {
   return (
     <div className="app-bgimage">
       <div className="container">
-        <img src={logo} alt="endwalker" />
-        <p className="title">Early Access 3rd December 9am GMT</p>
+        <img src={logo} alt="endwalker" className="logo" />
+        <p className="title">
+          <a href="https://sqex.to/htj" target="_blank" rel="noreferrer">
+            <img src={liveletter} alt="liveletter" className="liveletter" />
+          </a>
+          19th February 2am GMT
+        </p>
         <Timer />
         <footer>
-          Created by <a href="http://www.github.com/jen-ova">Jen Ova</a>
+          <p>
+            Created by <a href="http://www.github.com/jen-ova">Jen Ova</a>
+          </p>
         </footer>
       </div>
     </div>

@@ -14,9 +14,21 @@ body {
   max-width: 55rem;
 }
 
-img {
+.logo {
   width: 100%;
+  display: block;
 }
+
+.liveletter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+
+
 
 .title {
   color: white;
@@ -25,7 +37,7 @@ img {
     1px 1px 10px rgba(204, 122, 42, 255);
 }
 
-footer a {
+a {
   color: rgba(204, 122, 42, 255);
   font-weight: bold;
   text-decoration: none;
