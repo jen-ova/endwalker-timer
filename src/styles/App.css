@@ -5,6 +5,15 @@ body {
   background-color: black;
 }
 
+.fixed-background {
+  background-image: url("../titlewallpaper.png");
+  background-position: center; 
+  height: 100vh;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  overflow: auto;
+}
+
 .container {
   text-align: center;
   position: relative;
@@ -12,6 +21,13 @@ body {
   color: white;
   margin: 0 auto;
   max-width: 55rem;
+}
+
+.wrapper {
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
 }
 
 .logo {
@@ -44,7 +60,22 @@ a {
 }
 
 @media only screen and (max-device-width: 750px) {
+
+  .fixed-background {
+    background-image: none;
+  }
+
+  .wrapper {
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+
   .title {
     font-size: 1rem;
+  }
+
+  .liveletter {
+    width: 85%;
   }
 }
