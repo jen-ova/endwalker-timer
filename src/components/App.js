@@ -14,7 +14,7 @@ function App() {
             <a href="https://sqex.to/htj" target="_blank" rel="noreferrer">
               <img src={liveletter} alt="liveletter" className="liveletter" />
             </a>
-            19th February 2am GMT
+            4th March 11am GMT
           </p>
           <Timer />
           <footer>
