@@ -1,7 +1,8 @@
 import React from "react";
 import Timer from "./Timer";
 // import logo from "../ew.png";
-import patch61 from "../61-newfoundadventure.png";
+// import patch61 from "../61-newfoundadventure.png";
+import liveletter from "../liveletter.png";
 import "../styles/App.css";
 
 function App() {
@@ -15,9 +16,9 @@ function App() {
             href="https://eu.finalfantasyxiv.com/endwalker/patch_6_1/"
             target="_blank"
             rel="noreferrer">
-            <img src={patch61} alt="liveletter" className="preview" />
+            <img src={liveletter} alt="liveletter" className="preview" />
           </a>
-          <p className="title">Coming Mid-April 2022</p>
+          <p className="title">Friday 1st April 11am BST</p>
           <Timer />
           <footer>
             <p>
