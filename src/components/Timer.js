@@ -4,7 +4,7 @@ import TimerCards from "./TimerCards";
 function Timer() {
   const calculateTimeLeft = () => {
     let difference =
-      +new Date("April 12, 2022 11:00:00 GMT+00:00") - +new Date();
+      +new Date("June 28, 2024 11:00:00 GMT+00:00") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
